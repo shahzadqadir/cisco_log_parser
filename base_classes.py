@@ -1,9 +1,9 @@
 class LogMessage:
-    def __init__(self, date_time, facility, severity, mnemonic, message):
+    def __init__(self, date_time, facility, severity, event_type, message):
         self._date_time = date_time
         self._facility = facility
         self._severity = severity
-        self._mnemonic = mnemonic
+        self._event_type = event_type
         self._message = message
 
     @property
@@ -33,12 +33,12 @@ class LogMessage:
         self._severity = value
 
     @property
-    def mnemonic(self):
-        return self._mnemonic
+    def event_type(self):
+        return self._event_type
 
-    @mnemonic.setter
-    def mnemonic(self, value):
-        self._mnemonic = value
+    @event_type.setter
+    def event_type(self, value):
+        self._event_type = value
 
     @property
     def message(self):
@@ -49,7 +49,7 @@ class LogMessage:
         self._message = value
 
     def __str__(self):
-        return f"{self.date_time}: %{self.facility}-{self.severity}-{self.mnemonic}: {self.message}"
+        return f"{self.date_time}: %{self.facility}-{self.severity}-{self.event_type}: {self.message}"
 
     def old_message(self):
         pass
