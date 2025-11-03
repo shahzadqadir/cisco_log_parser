@@ -24,3 +24,12 @@ class Operations:
             event_type=event_type,
             message=message
             )
+
+    @classmethod
+    def parse_log_file(cls, filename):
+        log_message_objs = []
+        with open(filename, 'r') as file:
+            for line in file:
+                log_message = cls.parse_log_message(line)
+                log_message_objs.append(log_message)
+        return log_message_objs

@@ -1,0 +1,22 @@
+*Oct 30 2025 05:25:13.402: %IOSXE-3-PLATFORM: R0/0: kernel: Warning: unable to open an initial console.
+*Oct 30 2025 05:25:13.448: %IOSXE-4-PLATFORM: R0/0: kernel: cpldha: loading out-of-tree module taints kernel.
+*Oct 30 2025 05:25:13.544: %IOSXE-4-PLATFORM: R0/0: kernel: ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 11
+*Oct 30 2025 05:25:52.544: %CPPDRV-4-CPU_FEATURE: R0/0: cpp_driver: CPP0: CPU lacks feature (Population Count HW-Assist (POPCNT)).  Performance may be sub-optimal.
+*Oct 30 2025 05:25:52.545: %CPPDRV-4-CPU_FEATURE: R0/0: cpp_driver: CPP0: CPU lacks feature (AES HW-Assist (AES-NI)).  Performance may be sub-optimal.
+*Oct 30 2025 05:25:52.545: %CPPDRV-3-GUEST_CPU_FEATURE: R0/0: cpp_driver: CPP0: Guest CPU lacks feature (Supplemental Streaming SIMD Extensions 3 (SSSE3)).
+*Oct 30 2025 05:26:17.048: %SYS-5-CONFIG_I: Configured from memory by console
+*Oct 30 2025 05:26:17.144: %IOSXE_OIR-6-INSCARD: Card (rp) inserted in slot R1
+*Oct 30 2025 05:26:17.323: %SSH-5-ENABLED: SSH 1.99 has been enabled
+*Oct 30 2025 05:26:17.328: %LINK-3-UPDOWN: Interface LIIN0, changed state to up
+*Oct 30 2025 05:26:17.328: %LINK-5-CHANGED: Interface GigabitEthernet1, changed state to administratively down
+*Oct 30 2025 05:26:17.328: %LINEPROTO-5-UPDOWN: Line protocol on Interface Lsmpi0, changed state to up
+*Oct 30 2025 05:26:17.329: %LINK-5-CHANGED: Interface GigabitEthernet3, changed state to administratively down
+*Oct 30 2025 05:26:17.353: %CRYPTO-6-ISAKMP_ON_OFF: ISAKMP is OFF
+*Oct 30 2025 05:26:17.353: %CRYPTO-6-GDOI_ON_OFF: GDOI is OFF
+*Oct 30 2025 05:26:17.401: %SYS-6-BOOTTIME: Time taken to reboot after reload =   94 seconds
+*Oct 30 2025 05:26:18.327: %LINEPROTO-5-UPDOWN: Line protocol on Interface LIIN0, changed state to up
+*Oct 30 2025 05:26:18.327: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1, changed state to down
+*Oct 30 2025 05:26:18.329: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet2, changed state to down
+*Oct 30 2025 05:26:18.329: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet3, changed state to down
+*Oct 30 2025 05:26:18.351: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet4, changed state to down
+*Oct 30 2025 05:26:22.585: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)

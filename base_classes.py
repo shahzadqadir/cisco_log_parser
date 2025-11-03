@@ -1,3 +1,6 @@
+from datetime import datetime, timedelta
+
+
 class LogMessage:
     def __init__(self, date_time, facility, severity, event_type, message):
         self._date_time = date_time
@@ -48,16 +51,17 @@ class LogMessage:
     def message(self, value):
         self._message = value
 
-    def __str__(self):
-        return f"{self.date_time}: %{self.facility}-{self.severity}-{self.event_type}: {self.message}"
+    def is_old_message(self):
+        two_days_old = datetime.now() - timedelta(days=2)
+        return self.date_time <= two_days_old
 
-    def old_message(self):
-        pass
-
-    def new_message(self):
-        pass
+    def is_new_message(self):
+        one_day_old = datetime.now() - timedelta(days=1)
+        return self.date_time >= one_day_old
 
     def is_critical(self):
         return self.severity >= 5
 
+    def __str__(self):
+        return f"{self.date_time}: %{self.facility}-{self.severity}-{self.event_type}: {self.message}"
 
